@@ -1,11 +1,341 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Html Css Final Task</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <!-- header -->
+    <header class="header">
+      <div class="container header-flex">
+        <img
+          src="./assets/1fe17c3b25104fee0bc6d0a70332d9988e8c939e.png"
+          alt="logo"
+          width="150"
+          height="70"
+          style="margin-left: 50px"
+        />
+
+        <nav class="nav">
+          <a href="#">How We Work</a>
+          <a href="#">Find an Agent</a>
+          <a href="#">Knowledge Center</a>
+        </nav>
+
+        <div class="auth-buttons">
+          <a href="#" class="signin">Sign In</a>
+          <a href="#" class="signup">Join Now</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- hero part -->
+    <section class="hero">
+      <div class="container hero-content">
+        <div class="hero-text">
+          <h1>Search our listings for your next purchase</h1>
+          <div class="search-box">
+            <input
+              type="text"
+              placeholder="Enter City, neighborhood, ZIP, or address..."
+            />
+            <button>
+              <i class="fa fa-search"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="hero-image">
+          <img
+            src="./assets/Screenshot from 2025-12-05 11-47-53.png"
+            alt="Hero Image Placeholder"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- feature listing  -->
+    <section class="featured">
+      <div class="container">
+        <h2>Our Featured Listing</h2>
+
+        <div class="card-grid">
+          <div class="card">
+            <img src="" alt="Listing Image" />
+            <h3>APARTMENT</h3>
+            <p>Address details here</p>
+            <span class="price">$200,000</span>
+          </div>
+
+          <div class="card">
+            <img src="" alt="Listing Image" />
+            <h3>APARTMENT</h3>
+            <p>Address details here</p>
+            <span class="price">$180,000</span>
+          </div>
+
+          <div class="card">
+            <img src="" alt="Listing Image" />
+            <h3>APARTMENT</h3>
+            <p>Address details here</p>
+            <span class="price">$250,000</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- events -->
+    <section class="events">
+      <div class="container">
+        <h2>Events</h2>
+
+        <div class="card-grid">
+          <div class="event-card">
+            <img src="" alt="Event Image" />
+            <h4>Event Name</h4>
+            <p>Short description...</p>
+          </div>
+
+          <div class="event-card">
+            <img src="" alt="Event Image" />
+            <h4>Event Name</h4>
+            <p>Short description...</p>
+          </div>
+
+          <div class="event-card">
+            <img src="" alt="Event Image" />
+            <h4>Event Name</h4>
+            <p>Short description...</p>
+          </div>
+
+          <div class="event-card">
+            <img src="" alt="Event Image" />
+            <h4>Event Name</h4>
+            <p>Short description...</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- services -->
+    <section class="services">
+      <div class="container">
+        <h2>reverify + everything you need for your real estate journey</h2>
+
+        <div class="service-grid">
+          <div class="service-box">Attorney</div>
+          <div class="service-box">Photos / Videos</div>
+          <div class="service-box">Agent</div>
+          <div class="service-box">Cleaning Services</div>
+          <div class="service-box">Inspection</div>
+          <div class="service-box">Insurance Provider</div>
+        </div>
+      </div>
+    </section>  
+
+    <!-- explore our listing -->
+    <!-- <section class="explore">
+      <div class="container">
+        <h2>Explore our Listings</h2>
+
+        <div class="explore-grid">
+          <div class="explore-item">
+            <img src="" alt="" />
+            <span>New York</span>
+          </div>
+          <div class="explore-item">
+            <img src="" alt="" />
+            <span>California</span>
+          </div>
+          <div class="explore-item">
+            <img src="" alt="" />
+            <span>Florida</span>
+          </div>
+          <div class="explore-item">
+            <img src="" alt="" />
+            <span>New Jersey</span>
+          </div>
+          <div class="explore-item">
+            <img src="" alt="" />
+            <span>Alaska</span>
+          </div>
+          <div class="explore-item">
+            <img src="" alt="" />
+            <span>Georgia</span>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+
+    <section class="listing-section">
+    <h2>Explore our Listings</h2>
+
+    <div class="listing-grid">
+
+        <!-- New York (Large Card) -->
+        <div class="listing-card large">
+            <img src="your-new-york.jpg" alt="">
+            <div class="info">
+                <h3>New York</h3>
+                <p>2 Listings</p>
+            </div>
+        </div>
+
+        <!-- California -->
+        <div class="listing-card">
+            <img src="your-california.jpg" alt="">
+            <div class="info">
+                <h3>California</h3>
+                <p>43 Listings</p>
+            </div>
+        </div>
+
+        <!-- Florida -->
+        <div class="listing-card">
+            <img src="your-florida.jpg" alt="">
+            <div class="info">
+                <h3>Florida</h3>
+                <p>23 Listings</p>
+            </div>
+        </div>
+
+        <!-- Hawaii -->
+        <div class="listing-card">
+            <img src="your-hawaii.jpg" alt="">
+            <div class="info">
+                <h3>Hawaii</h3>
+                <p>53 Listings</p>
+            </div>
+        </div>
+
+        <!-- Alaska -->
+        <div class="listing-card">
+            <img src="your-alaska.jpg" alt="">
+            <div class="info">
+                <h3>Alaska</h3>
+                <p>5 Listings</p>
+            </div>
+        </div>
+
+        <!-- New Jersey -->
+        <div class="listing-card">
+            <img src="your-new-jersey.jpg" alt="">
+            <div class="info">
+                <h3>New Jersey</h3>
+                <p>89 Listings</p>
+            </div>
+        </div>
+
+        <!-- Georgia -->
+        <div class="listing-card">
+            <img src="your-georgia.jpg" alt="">
+            <div class="info">
+                <h3>Georgia</h3>
+                <p>17 Listings</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+
+    <!-- address -->
+    <section class="claim">
+      <div class="container claim-content">
+        <h2>Claim your Address</h2>
+        <p>Own your digital identity</p>
+        <button class="claim-btn">Get Started</button>
+      </div>
+    </section>
+
+    <section class="joinUs">
+        <div class="joinUsText">
+            <h1>Start your real estate journey with </h1>
+            <img src="./assets/776b254ecef4d7c8aabd843763de3d60e7eab9d1.png" alt="" width="76" height="38">
+        </div>
+        <button>Join Us</button>
+    </section>
+
+    <!-- Social Icons -->
+    <div >
+      <ul class="socialLinks">
+        <li>x</li>
+        <li>y</li>
+        <li>z</li>
+        <li>q</li>
+      </ul>
+    </div>
+    <!-- footer -->
+    <footer class="footer">
+      <div class="container footer-flex">
+        <div class="footer-left">
+          <img
+            src="./assets/1fe17c3b25104fee0bc6d0a70332d9988e8c939e.png"
+            alt=""
+            width="180"
+            height="100"
+          />
+          <ul style="text-decoration: none">
+            <li><i class="fa fa-map-marker-alt"></i>712-427-1242</li>
+            <li>support@example.com</li>
+            <li>319-764-9876</li>
+          </ul>
+        </div>
+
+        <div class="footer-columns">
+          <div class="footer-col">
+            <h4>Helpful Link</h4>
+            <a href="#">Sign In</a>
+            <a href="#">Support</a>
+            <a href="#">FAQ's</a>
+          </div>
+
+          <div class="footer-col">
+            <h4>Company</h4>
+            <a href="#">About us</a>
+            <a href="#">Privacy</a>
+            <a href="#">Terms of use</a>
+            <a href="#">Accessibility</a>
+          </div>
+
+          <div class="footer-col">
+              <h4>Subscribe to our Newsletter</h4>
+            <input
+              type="text"
+              placeholder="Enter City, neighborhood, ZIP, or address..."
+            />
+           <button>
+              Subscribe
+            </button>
+          </div>
+
+          <!-- <div class="search-box">
+            <input
+              type="text"
+              placeholder="Enter City, neighborhood, ZIP, or address..."
+            />
+            <button>
+              <i class="fa fa-search"></i>
+            </button>
+        </div> -->
+        </div>
+      </div>
+
+      <div class="copy">Copyright © 2025 Reverifi. All rights reserved</div>
+    </footer>
+  </body>
 </html>
+
+
+
+
+
+
