@@ -163,7 +163,12 @@ body {
   height: 140px;
   background: #ddd;
 }
-
+.km {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  gap: 20px;
+}
 .featured-section {
   text-align: center;
   padding: 40px 20px;
@@ -182,21 +187,14 @@ body {
   flex-wrap: wrap;
 }
 
-/* --- CARD --- */
 .property-card {
-  width: 330px;
+  width: 480px;
   border-radius: 12px;
   overflow: hidden;
   background: #fff;
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
   transition: 0.3s ease;
 }
 
-.property-card:hover {
-  transform: translateY(-4px);
-}
-
-/* IMAGE AREA */
 .img-box {
   position: relative;
   height: 200px;
@@ -219,10 +217,8 @@ body {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  border: 3px solid #fff;
 }
 
-/* BADGES */
 .badge {
   position: absolute;
   top: 12px;
@@ -239,21 +235,31 @@ body {
 }
 
 .badge.rent {
-  background: #68c44a;
-  left: auto;
-  right: 12px;
+  background: #b2d235;
+  left: 10px;
 }
-
+.card3Badge {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
 .badge.sale {
-  background: #ffa500;
-  top: 45px;
+  background: #b2d235;
+  left: 80px;
 }
 
 .details {
   padding: 18px;
   text-align: left;
 }
-
+.detailsInfo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 185px;
+  margin-bottom: 10px;
+}
 .details h3 {
   margin: 0 0 6px;
   font-size: 20px;
@@ -265,13 +271,14 @@ body {
   margin-bottom: 2px;
 }
 .referifi {
-    display: grid;
-    justify-content: start;align-items: start;
-    gap: 30px;
-    margin-left: 60px;
+  display: grid;
+  justify-content: start;
+  align-items: start;
+  gap: 30px;
+  margin-left: 60px;
 }
 .referifi p {
-    max-width: 700px;
+  max-width: 700px;
 }
 
 .seeMore {
@@ -286,9 +293,9 @@ body {
   text-decoration: none;
 }
 .servicesAll {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .service-grid {
   display: grid;
@@ -313,6 +320,7 @@ body {
   display: flex;
   gap: 14px;
   font-size: 14px;
+  margin-left: 10px;
   margin-bottom: 20px;
 }
 
@@ -320,11 +328,13 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  /* border-top: 1px solid #000; */
 }
 
 .price {
   font-size: 22px;
   font-weight: 700;
+  color: #222;
 }
 
 .actions {
@@ -333,12 +343,14 @@ body {
   gap: 10px;
   cursor: pointer;
 }
+.iconLike:hover img {
+  content: url("./assets/detailsImages/Group\ 3\ \(2\).png");
+}
 
 .services {
   padding: 50px 0;
   background: white;
 }
-
 
 .address {
   position: relative;
@@ -444,9 +456,17 @@ body {
   padding: 40px 0 0;
 }
 
-.footer-left img {
+/* .footer-left img {
   margin-bottom: 20px;
+} */
+
+.footer-left ul li {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 20px;
 }
+
 .footer-flex {
   display: flex;
   justify-content: space-between;
