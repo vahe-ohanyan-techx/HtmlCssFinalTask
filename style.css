@@ -102,12 +102,13 @@ body {
 .search-box button {
   position: relative;
   right: 60px;
+  font-size: 10px;
   padding: 20px;
   background: #b2d235;
   color: white;
   border: none;
   font-size: 18px;
-  /* border-radius: 60%; */
+  border-radius: 60%;
 }
 
 .hero-image img {
@@ -198,7 +199,7 @@ body {
 .img-box {
   position: relative;
   height: 200px;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .img-box img {
@@ -231,6 +232,7 @@ body {
 }
 
 .badge.new {
+  position: relative;
   background: #ff6b3d;
 }
 
@@ -277,6 +279,10 @@ body {
   gap: 30px;
   margin-left: 60px;
 }
+.referifi img {
+  position: relative;
+  left: 0px;
+}
 .referifi p {
   max-width: 700px;
 }
@@ -304,10 +310,10 @@ body {
   margin-top: 20px;
 }
 .events-detail {
-    margin-top: 20px;
-    display: grid;
-    gap: 10px;
-    margin-right: 20px;
+  margin-top: 20px;
+  display: grid;
+  gap: 10px;
+  margin-right: 20px;
 }
 
 .service-box {
@@ -363,6 +369,21 @@ body {
   top: 6px;
   margin-top: 30px;
 }
+
+.top-labels {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0px;
+   left: 10px;
+   gap: 190px;
+}
+.top-labels img {
+  position: relative;
+  /* left: 30px; */
+}
+
 
 .joinUs {
   display: flex;
@@ -481,7 +502,7 @@ body {
 
 .footer-columns {
   display: flex;
-  gap: 200px;
+  gap: 160px;
 }
 
 .footer-col h4 {
@@ -497,18 +518,23 @@ body {
 }
 
 .footer-col input {
-  padding: 10px;
+  padding: 15px;
   border: none;
   margin-bottom: 10px;
   width: 100%;
+  border-radius: 15px;
 }
 
 .footer-col button {
-  padding: 10px;
+  position: relative;
+  bottom: 65px;
+  left: 335px;
+  border-radius: 20px;
+  padding: 15px;
   background: #b2d235;
   border: none;
   color: white;
-  width: 100%;
+  width: 30%;
 }
 
 .copy {
@@ -518,4 +544,334 @@ body {
   margin-top: 20px;
   font-size: 22px;
   color: #888;
+}
+
+/* Burger  */
+
+.burger {
+  display: none;
+  flex-direction: column;
+  gap: 6px;
+  cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+  .nav {
+    margin-right: 100px;
+  }
+
+  .hero-content {
+    padding-left: 40px;
+  }
+
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+
+  .listing-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .footer-flex {
+    padding: 0 40px;
+  }
+
+  .footer-columns {
+    gap: 100px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 15px;
+  }
+
+  .header-flex {
+    padding: 0 30px;
+  }
+
+  .nav {
+    display: none;
+    margin-right: 0;
+  }
+  .burger {
+    display: flex;
+  }
+
+  .auth-buttons {
+    display: none;
+  }
+
+  .mobile-menu-toggle {
+    display: block;
+  }
+
+  .hero {
+    padding: 30px 0;
+  }
+
+  .hero-content {
+    flex-direction: column;
+    padding: 0 20px;
+  }
+
+  .hero-text h1 {
+    font-size: 1.5rem;
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .search-box {
+    width: 100%;
+    justify-content: center;
+    margin-left: 20px;
+  }
+
+  .search-box input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-size: 14px;
+  }
+  .search-box img {
+    left: 40px;
+  }
+
+  .search-box button {
+    right: 50px;
+    padding: 15px;
+    border-radius: 50%;
+  }
+
+  .hero-image {
+    margin-top: 30px;
+  }
+
+  .hero-image img {
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+    margin-right: 0;
+  }
+
+  .featured-section {
+    padding: 30px 15px;
+  }
+
+  .featured-section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .cards-container {
+    flex-direction: column;
+    gap: 20px;
+    /* margin: 0px 20px 0px 50px; */
+    margin: auto;
+  }
+  .changeBtn {
+    display: none;
+  }
+  .property-card {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .card-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+    padding: 0 15px;
+  }
+
+  .detailsInfo {
+    gap: 50px;
+  }
+
+  .events {
+    padding: 30px 15px;
+  }
+
+  .events-detail {
+    margin-right: 0;
+  }
+
+  .service-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .service-box {
+    padding: 15px 10px;
+  }
+
+  .referifi {
+    margin-left: 30px;
+    /* margin-right: 20px; */
+    /* gap: 20px; */
+  }
+
+  .referifi p {
+    max-width: 100%;
+    margin-left: 20px;
+    max-width: 85%;
+  }
+  .referifi img {
+    margin-left: 100px;
+  }
+  .referifi button {
+    margin-left: 100px;
+  }
+  .seeMore {
+    width: 150px;
+    margin-right: 0;
+  }
+
+  .servicesAll {
+    display: grid;
+    padding: 0 15px;
+  }
+
+  .listing-section {
+    padding: 30px 15px;
+  }
+
+  .listing-section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .listing-grid {
+    grid-template-columns: 1fr;
+    grid-gap: 15px;
+  }
+
+  .listing-card.large {
+    grid-column: span 1;
+    grid-row: span 1;
+    height: 230px;
+  }
+
+  .joinUs {
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px 20px;
+  }
+
+  .joinUsText {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .joinUsText h1 {
+    font-size: 20px;
+  }
+
+  .joinUs button {
+    width: 100%;
+  }
+
+  .address {
+    text-align: center;
+  }
+
+  .socialIcons {
+    flex-wrap: wrap;
+    padding: 30px 20px;
+  }
+
+  .footer-flex {
+    flex-direction: column;
+    padding: 0 20px;
+    gap: 30px;
+  }
+
+  .footer-columns {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .footer-col h4 {
+    margin-bottom: 20px;
+  }
+  .footer-col input {
+    width: 80%;
+  }
+  .footer-col input::placeholder {
+    max-width: 90%;
+  }
+  .footer-col button {
+    width: 30%;
+    position: relative;
+    left: 300px;
+    padding: 18px;
+
+    font-size: 16px;
+  }
+
+  .copy {
+    font-size: 14px;
+    padding: 20px;
+  }
+
+  .mobile-only {
+    display: block;
+  }
+
+  .desktop-only {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-text h1 {
+    font-size: 1.25rem;
+  }
+
+  .featured-section h2 {
+    font-size: 20px;
+  }
+
+  .details h3 {
+    font-size: 18px;
+  }
+
+  .detailsInfo {
+    gap: 20px;
+  }
+
+  .icons-row {
+    margin-left: 0;
+    gap: 10px;
+    font-size: 12px;
+  }
+
+  .price {
+    font-size: 18px;
+  }
+
+  .service-grid {
+    display: grid;
+    font-size: 14px;
+    /* padding: 0 100px 0; */
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0px;
+  }
+
+  .listing-section h2 {
+    font-size: 20px;
+  }
+
+  .info h3 {
+    font-size: 20px;
+  }
+
+  .info p {
+    font-size: 13px;
+  }
+}
+
+.mobile-only {
+  display: none;
 }

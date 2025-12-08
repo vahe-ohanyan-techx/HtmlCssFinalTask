@@ -20,12 +20,16 @@
     <!-- header -->
     <header class="header">
       <div class="container header-flex">
+        <div class="burger">
+          <img src="./assets/menu.png" alt="" />
+        </div>
         <img
           src="./assets/1fe17c3b25104fee0bc6d0a70332d9988e8c939e.png"
           alt="logo"
           width="150"
           height="70"
           style="margin-left: 50px"
+          class="logo"
         />
 
         <nav class="nav">
@@ -291,13 +295,24 @@
 
       <div class="cards-container">
         <!-- CARD 1 -->
+
+        <div style="position: absolute; left: 60px; top: 1680px; z-index: 1">
+          <img src="./assets/Group 5 Copy.png" alt="" class="changeBtn" />
+        </div>
+        <div style="position: absolute; right: 60px; top: 1680px; z-index: 1">
+          <img src="./assets/Group 5 Copy (1).png" alt="" class="changeBtn" />
+        </div>
+
         <div class="property-card" style="height: 300px; width: 370px">
           <div class="img-box">
             <img
               src="./assets/eventsImage/01101db94681b04a722bee19819c22fbdf4bc601.png"
               alt=""
             />
-            <span class="badge new">Personal</span>
+            <div class="top-labels">
+                <span class="badge new">Personal</span>
+                <img src="./assets/Group 72.png" alt="" />
+            </div>
           </div>
 
           <div style="display: flex; justify-content: center; gap: 50px">
@@ -346,8 +361,12 @@
               src="./assets/eventsImage/1248b134dbc20346092e8e12759e7e6153d0e30e.png"
               alt=""
             />
-            <span class="badge new">Personal</span>
+            <div class="top-labels">
+                <span class="badge new">Personal</span>
+                <img src="./assets/Group 72.png" alt="" />
+            </div>
           </div>
+          <!-- OCT8 -->
 
           <div style="display: flex; justify-content: center; gap: 50px">
             <div class="details">
@@ -395,9 +414,10 @@
               src="./assets/eventsImage/8ac94ec7617b98d2d4a25c242249b4340a41d700.png"
               alt=""
             />
-            <span class="badge new" style="background-color: #b2d235"
-              >Webinar</span
-            >
+            <div class="top-labels">
+                <span class="badge new" style="background-color: #b2d235;">Webinar</span>
+                <img src="./assets/Group 72.png" alt="" />
+            </div>
           </div>
 
           <div style="display: flex; justify-content: center; gap: 50px">
@@ -446,9 +466,10 @@
               src="./assets/eventsImage/768eaf7191aa77cbcec3df3ac6ec1c49d78fd351.png"
               alt=""
             />
-            <span class="badge new" style="background-color: #b2d235"
-              >Webinar</span
-            >
+           <div class="top-labels">
+                <span class="badge new" style="background-color: #b2d235;">Webinar</span>
+                <img src="./assets/Group 72.png" alt="" />
+            </div>
           </div>
 
           <div style="display: flex; justify-content: center; gap: 50px">
@@ -731,11 +752,7 @@
           </div>
 
           <div class="footer-col">
-            <h4>Subscribe to our Newsletter</h4>
-            <input
-              type="text"
-              placeholder="Enter City, neighborhood, ZIP, or address..."
-            />
+            <input type="text" placeholder="Subscribe to our Newsletter" />
             <button>Subscribe</button>
           </div>
         </div>
