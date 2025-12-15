@@ -17,9 +17,8 @@
     />
   </head>
   <body>
-    <!-- header -->
     <header class="header">
-      <div class="container header-flex">
+      <div class="container header__flex">
         <div class="burger">
           <img src="./assets/menu.png" alt="burger" />
         </div>
@@ -33,22 +32,25 @@
         />
 
         <nav class="nav">
-          <a href="#">How We Work</a>
-          <a href="#">Find an Agent</a>
-          <a href="#">Knowledge Center</a>
+          <a href="#" class="nav__link">How We Work</a>
+          <a href="#" class="nav__link">Find an Agent</a>
+          <a href="#" class="nav__link">Knowledge Center</a>
         </nav>
 
         <div class="auth-buttons">
-          <a href="#" class="signin">Sign In</a>
-          <a href="#" class="signup">Join Now</a>
+          <a href="#" class="auth-buttons__link auth-buttons__link--signin"
+            >Sign In</a
+          >
+          <a href="#" class="auth-buttons__link auth-buttons__link--signup"
+            >Join Now</a
+          >
         </div>
       </div>
     </header>
-
-    <!-- hero part -->
+    <!-- Hero -->
     <section class="hero">
-      <div class="container hero-content">
-        <div class="hero-text">
+      <div class="container hero__content">
+        <div class="hero__text">
           <h1>Search our listings for your next purchase</h1>
           <div class="search-box">
             <img
@@ -58,15 +60,16 @@
             />
             <input
               type="text"
+              class="search-box__input"
               placeholder="Enter City, neighborhood, ZIP, or address..."
             />
-            <button>
+            <button class="search-box__button">
               <i class="fa fa-search"></i>
             </button>
           </div>
         </div>
 
-        <div class="hero-image">
+        <div class="hero__image">
           <img
             src="./assets/Screenshot from 2025-12-05 11-47-53.png"
             alt="Hero Image Placeholder"
@@ -74,21 +77,22 @@
         </div>
       </div>
     </section>
-
-    <!-- feature listing  -->
+    <!-- listing -->
     <section class="featured-section listing-featured">
       <h2>Our Featured Listing</h2>
 
-      <div class="cards-container">
+      <div class="featured-section__cards">
         <!-- card1 -->
         <div class="property-card">
-          <div class="img-box">
+          <div class="property-card__img-box">
             <img
               src="assets/featuredListingImages/2df0ebb0bfa69e00b092af4d79659410c4f79d03.png"
               alt="cardImage"
             />
-            <span class="badge new">New</span>
-            <div class="agent-img">
+            <span class="property-card__badge property-card__badge--new"
+              >New</span
+            >
+            <div class="property-card__agent-img">
               <img
                 src="./assets/e00c6852c8a3b58d060645c253f13d10c58efc76.png"
                 alt="cardImage"
@@ -96,11 +100,11 @@
             </div>
           </div>
 
-          <div class="details">
-            <div class="detailsInfo">
+          <div class="property-card__details">
+            <div class="property-card__details-info">
               <div>
                 <h3>Apartment#1</h3>
-                <p class="location">Bronx, NY 10459</p>
+                <p class="property-card__location">Bronx, NY 10459</p>
               </div>
               <div class="km">
                 <img
@@ -108,11 +112,11 @@
                   alt="location"
                   style="position: relative"
                 />
-                <p class="away">1.1km away</p>
+                <p class="property-card__away">1.1km away</p>
               </div>
             </div>
 
-            <div class="icons-row">
+            <div class="property-card__icons">
               <span
                 >2
                 <img src="./assets/detailsImages/bedroom.png" alt="bedroomimg"
@@ -133,11 +137,11 @@
                 ><img src="./assets/detailsImages/bathtub.png" alt="bathtubimg"
               /></span>
             </div>
-            <!-- <hr> -->
-            <div class="price-row">
-              <p class="price">$30,000</p>
-              <div class="actions">
-                <div class="iconLike">
+
+            <div class="property-card__price-row">
+              <p class="property-card__price">$30,000</p>
+              <div class="property-card__actions">
+                <div class="property-card__icon-like">
                   <img
                     src="./assets/detailsImages/Group 3 (1).png"
                     alt="icon"
@@ -156,13 +160,15 @@
 
         <!-- card2 -->
         <div class="property-card">
-          <div class="img-box">
+          <div class="property-card__img-box">
             <img
               src="./assets/featuredListingImages/2b4213bec169816eadb3d76dac155fbf27361f2c.png"
               alt=""
             />
-            <span class="badge rent">Rent</span>
-            <div class="agent-img">
+            <span class="property-card__badge property-card__badge--rent"
+              >Rent</span
+            >
+            <div class="property-card__agent-img">
               <img
                 src="./assets/e00c6852c8a3b58d060645c253f13d10c58efc76.png"
                 alt=""
@@ -170,11 +176,11 @@
             </div>
           </div>
 
-          <div class="details">
-            <div class="detailsInfo">
+          <div class="property-card__details">
+            <div class="property-card__details-info">
               <div>
                 <h3>Apartment#1</h3>
-                <p class="location">Bronx, NY 10459</p>
+                <p class="property-card__location">Bronx, NY 10459</p>
               </div>
               <div class="km">
                 <img
@@ -182,11 +188,11 @@
                   alt=""
                   style="position: relative"
                 />
-                <p class="away">1.1km away</p>
+                <p class="property-card__away">1.1km away</p>
               </div>
             </div>
 
-            <div class="icons-row">
+            <div class="property-card__icons">
               <span
                 >2 <img src="./assets/detailsImages/bedroom.png" alt=""
               /></span>
@@ -204,10 +210,10 @@
               /></span>
             </div>
 
-            <div class="price-row">
-              <p class="price">$123/Month</p>
-              <div class="actions">
-                <div class="iconLike">
+            <div class="property-card__price-row">
+              <p class="property-card__price">$123/Month</p>
+              <div class="property-card__actions">
+                <div class="property-card__icon-like">
                   <img src="./assets/detailsImages/Group 3 (1).png" alt="" />
                 </div>
                 <div>
@@ -220,16 +226,20 @@
 
         <!-- card3 -->
         <div class="property-card">
-          <div class="img-box">
+          <div class="property-card__img-box">
             <img
               src="./assets/featuredListingImages/0b500b820809c05f71867127e52f75bc72cb18b2.png"
               alt=""
             />
-            <div class="card3Badge">
-              <span class="badge new">New</span>
-              <span class="badge sale">Sale</span>
+            <div class="property-card__badge-group">
+              <span class="property-card__badge property-card__badge--new"
+                >New</span
+              >
+              <span class="property-card__badge property-card__badge--sale"
+                >Sale</span
+              >
             </div>
-            <div class="agent-img">
+            <div class="property-card__agent-img">
               <img
                 src="./assets/e00c6852c8a3b58d060645c253f13d10c58efc76.png"
                 alt=""
@@ -237,11 +247,11 @@
             </div>
           </div>
 
-          <div class="details">
-            <div class="detailsInfo">
+          <div class="property-card__details">
+            <div class="property-card__details-info">
               <div>
                 <h3>Apartment#1</h3>
-                <p class="location">Bronx, NY 10459</p>
+                <p class="property-card__location">Bronx, NY 10459</p>
               </div>
 
               <div class="km">
@@ -250,11 +260,11 @@
                   alt=""
                   style="position: relative"
                 />
-                <p class="away">1.1km away</p>
+                <p class="property-card__away">1.1km away</p>
               </div>
             </div>
 
-            <div class="icons-row">
+            <div class="property-card__icons">
               <span
                 >2 <img src="./assets/detailsImages/bedroom.png" alt=""
               /></span>
@@ -272,10 +282,10 @@
               /></span>
             </div>
 
-            <div class="price-row">
-              <p class="price">$30,000</p>
-              <div class="actions">
-                <div class="iconLike">
+            <div class="property-card__price-row">
+              <p class="property-card__price">$30,000</p>
+              <div class="property-card__actions">
+                <div class="property-card__icon-like">
                   <img src="./assets/detailsImages/Group 3 (1).png" alt="" />
                 </div>
                 <div>
@@ -290,8 +300,7 @@
         <img src="./assets/detailsImages/Group 35.png" alt="detailsImg" />
       </div>
     </section>
-
-    <!-- events -->
+    <!-- Events -->
     <section class="featured-section events-featured">
       <h2>Events</h2>
 
@@ -303,7 +312,7 @@
         />
       </div>
 
-      <div class="cards-container">
+      <div class="featured-section__cards">
         <!-- CARD 1 -->
 
         <div style="position: absolute; left: 60px; top: 1680px; z-index: 1">
@@ -322,24 +331,26 @@
         </div>
 
         <div class="property-card" style="height: 300px; width: 370px">
-          <div class="img-box">
+          <div class="property-card__img-box">
             <img
               src="./assets/eventsImage/01101db94681b04a722bee19819c22fbdf4bc601.png"
               alt="cardImg"
             />
-            <div class="top-labels">
-              <span class="badge new">Personal</span>
+            <div class="property-card__top-labels">
+              <span class="property-card__badge property-card__badge--new"
+                >Personal</span
+              >
               <img src="./assets/Group 72.png" alt="cardImg" />
             </div>
           </div>
 
           <div style="display: flex; justify-content: center; gap: 50px">
-            <div class="details">
+            <div class="property-card__details">
               <h3>Lorem ipsum</h3>
-              <p class="location">7:30-10:30PM @someplace</p>
+              <p class="property-card__location">7:30-10:30PM @someplace</p>
             </div>
 
-            <div class="events-detail">
+            <div class="events__detail">
               <div
                 style="
                   display: flex;
@@ -377,25 +388,26 @@
 
         <!-- Card 2 -->
         <div class="property-card" style="height: 300px; width: 370px">
-          <div class="img-box">
+          <div class="property-card__img-box">
             <img
               src="./assets/eventsImage/1248b134dbc20346092e8e12759e7e6153d0e30e.png"
               alt="cardImg"
             />
-            <div class="top-labels">
-              <span class="badge new">Personal</span>
+            <div class="property-card__top-labels">
+              <span class="property-card__badge property-card__badge--new"
+                >Personal</span
+              >
               <img src="./assets/Group 72.png" alt="cardImg" />
             </div>
           </div>
-          <!-- OCT8 -->
 
           <div style="display: flex; justify-content: center; gap: 50px">
-            <div class="details">
+            <div class="property-card__details">
               <h3>Lorem ipsum</h3>
-              <p class="location">7:30-10:30PM @someplace</p>
+              <p class="property-card__location">7:30-10:30PM @someplace</p>
             </div>
 
-            <div class="events-detail">
+            <div class="events__detail">
               <div
                 style="
                   display: flex;
@@ -433,13 +445,15 @@
 
         <!-- card 3 -->
         <div class="property-card" style="height: 300px; width: 370px">
-          <div class="img-box">
+          <div class="property-card__img-box">
             <img
               src="./assets/eventsImage/8ac94ec7617b98d2d4a25c242249b4340a41d700.png"
               alt=""
             />
-            <div class="top-labels">
-              <span class="badge new" style="background-color: #b2d235"
+            <div class="property-card__top-labels">
+              <span
+                class="property-card__badge property-card__badge--new"
+                style="background-color: #b2d235"
                 >Webinar</span
               >
               <img src="./assets/Group 72.png" alt="" />
@@ -447,12 +461,12 @@
           </div>
 
           <div style="display: flex; justify-content: center; gap: 50px">
-            <div class="details">
+            <div class="property-card__details">
               <h3>Lorem ipsum</h3>
-              <p class="location">7:30-10:30PM @someplace</p>
+              <p class="property-card__location">7:30-10:30PM @someplace</p>
             </div>
 
-            <div class="events-detail">
+            <div class="events__detail">
               <div
                 style="
                   display: flex;
@@ -487,13 +501,15 @@
 
         <!-- Card 4 -->
         <div class="property-card" style="height: 300px; width: 370px">
-          <div class="img-box">
+          <div class="property-card__img-box">
             <img
               src="./assets/eventsImage/768eaf7191aa77cbcec3df3ac6ec1c49d78fd351.png"
               alt=""
             />
-            <div class="top-labels">
-              <span class="badge new" style="background-color: #b2d235"
+            <div class="property-card__top-labels">
+              <span
+                class="property-card__badge property-card__badge--new"
+                style="background-color: #b2d235"
                 >Webinar</span
               >
               <img src="./assets/Group 72.png" alt="" />
@@ -501,12 +517,12 @@
           </div>
 
           <div style="display: flex; justify-content: center; gap: 50px">
-            <div class="details">
+            <div class="property-card__details">
               <h3>Lorem ipsum</h3>
-              <p class="location">7:30-10:30PM @someplace</p>
+              <p class="property-card__location">7:30-10:30PM @someplace</p>
             </div>
 
-            <div class="events-detail">
+            <div class="events__detail">
               <div
                 style="
                   display: flex;
@@ -541,10 +557,9 @@
       </div>
     </section>
 
-    <!-- services -->
     <section class="services">
       <div class="container">
-        <div class="servicesAll">
+        <div class="services__wrapper">
           <div class="referifi">
             <img
               src="./assets/reverifi+.png"
@@ -556,46 +571,46 @@
               Search our network and find your supporting team to complete the
               process
             </p>
-            <button class="seeMore">See More</button>
+            <button class="referifi__button">See More</button>
           </div>
 
           <div class="service-grid">
-            <div class="service-box">
+            <div class="service-grid__item">
               <img
                 src="assets/servicesImage/female-attorney-woman-female-lawyer-svgrepo-com.png"
                 alt="cardImg"
               />
               <p>Attorney</p>
             </div>
-            <div class="service-box">
+            <div class="service-grid__item">
               <img
                 src="assets/servicesImage/camera-svgrepo-com.png"
                 alt="cardImg"
               />
               <p>Photographer</p>
             </div>
-            <div class="service-box">
+            <div class="service-grid__item">
               <img
                 src="assets/servicesImage/agent-svgrepo-com.png"
                 alt="cardImg"
               />
               <p>Agent</p>
             </div>
-            <div class="service-box">
+            <div class="service-grid__item">
               <img
                 src="assets/servicesImage/clean-svgrepo-com.png"
                 alt="cardImg"
               />
               <p>Cleaning Services</p>
             </div>
-            <div class="service-box">
+            <div class="service-grid__item">
               <img
                 src="assets/servicesImage/inspection-svgrepo-com.png"
                 alt="cardImg"
               />
               <p>Home Inspectors</p>
             </div>
-            <div class="service-box">
+            <div class="service-grid__item">
               <img
                 src="assets/servicesImage/insurance-svgrepo-com.png"
                 alt="cardImg"
@@ -607,17 +622,16 @@
       </div>
     </section>
 
-    <!-- Explore our Listing -->
     <section class="listing-section">
       <h2>Explore our Listings</h2>
 
-      <div class="listing-grid">
-        <div class="listing-card large">
+      <div class="listing-section__grid">
+        <div class="listing-card listing-card--large">
           <img
             src="./assets/listingAssets/new-york-city-evening-NYCTG0221.png"
             alt=""
           />
-          <div class="info">
+          <div class="listing-card__info">
             <h3>New York</h3>
             <p>2 <strong style="color: white">Listing</strong></p>
           </div>
@@ -628,7 +642,7 @@
             src="./assets/listingAssets/74f97b7408181f617c7e90745d9e41dfafe06db6.png"
             alt=""
           />
-          <div class="info">
+          <div class="listing-card__info">
             <h3>California</h3>
             <p>43 <strong style="color: white">Listing</strong></p>
           </div>
@@ -639,7 +653,7 @@
             src="./assets/listingAssets/9720e373476a88ffba21c92371608d5198c1445a.png"
             alt=""
           />
-          <div class="info">
+          <div class="listing-card__info">
             <h3>Florida</h3>
             <p>23 <strong style="color: white">Listing</strong></p>
           </div>
@@ -650,7 +664,7 @@
             src="./assets/listingAssets/bd8aa7dd62eb186e4a2fdeba54e6f946a3c5035b.png"
             alt=""
           />
-          <div class="info">
+          <div class="listing-card__info">
             <h3>Hawaii</h3>
             <p>53 <strong style="color: white">Listing</strong></p>
           </div>
@@ -661,7 +675,7 @@
             src="./assets/listingAssets/013131d925094f59d5db1852b096982d4e2c9652.png"
             alt=""
           />
-          <div class="info">
+          <div class="listing-card__info">
             <h3>Alaska</h3>
             <p>5 <strong style="color: white">Listing</strong></p>
           </div>
@@ -672,7 +686,7 @@
             src="./assets/listingAssets/6c50c9b0f55e5476713019dc4f8ddabd6f27f740.png"
             alt=""
           />
-          <div class="info">
+          <div class="listing-card__info">
             <h3>New Jersey</h3>
             <p>89 <strong style="color: white">Listing</strong></p>
           </div>
@@ -683,7 +697,7 @@
             src="./assets/listingAssets/3cf5ed0f2bf9df242df3619276b39836d3794258.png"
             alt=""
           />
-          <div class="info">
+          <div class="listing-card__info">
             <h3>Georgia</h3>
             <p>17 <strong style="color: white">Listing</strong></p>
           </div>
@@ -701,9 +715,9 @@
         style="margin: 0; padding: 0"
       />
     </div>
-
+    <!-- join Us -->
     <section class="joinUs">
-      <div class="joinUsText">
+      <div class="joinUs__text">
         <h1>Start your real estate journey with</h1>
         <img
           src="./assets/776b254ecef4d7c8aabd843763de3d60e7eab9d1.png"
@@ -712,21 +726,21 @@
           height="38"
         />
       </div>
-      <button>Join Us</button>
+      <button class="joinUs__button">Join Us</button>
     </section>
 
     <!-- Social Icons -->
-    <div class="socialIcons">
+    <div class="social-icons">
       <img src="./assets/socailIcons/Fill_9.png" alt="" />
       <img src="./assets/socailIcons/Group 11.png" alt="" />
       <img src="./assets/socailIcons/Group 15.png" alt="" />
       <img src="./assets/socailIcons/Group 31.png" alt="" />
     </div>
 
-    <!-- footer -->
+    <!-- Footer -->
     <footer class="footer">
-      <div class="container footer-flex">
-        <div class="footer-left">
+      <div class="container footer__flex">
+        <div class="footer__left">
           <img
             src="./assets/1fe17c3b25104fee0bc6d0a70332d9988e8c939e.png"
             alt=""
@@ -772,15 +786,15 @@
           </ul>
         </div>
 
-        <div class="footer-columns">
-          <div class="footer-col">
+        <div class="footer__columns">
+          <div class="footer__col">
             <h4>Helpful Link</h4>
             <a href="#">Sign In</a>
             <a href="#">Support</a>
             <a href="#">FAQ's</a>
           </div>
 
-          <div class="footer-col">
+          <div class="footer__col">
             <h4>Company</h4>
             <a href="#">About us</a>
             <a href="#">Privacy</a>
@@ -788,14 +802,16 @@
             <a href="#">Accessibility</a>
           </div>
 
-          <div class="footer-col">
+          <div class="footer__col">
             <input type="text" placeholder="Subscribe to our Newsletter" />
             <button>Subscribe</button>
           </div>
         </div>
       </div>
 
-      <div class="copy">Copyright © 2025 Reverifi. All rights reserved</div>
+      <div class="footer__copy">
+        Copyright © 2025 Reverifi. All rights reserved
+      </div>
     </footer>
   </body>
 </html>
